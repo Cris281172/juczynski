@@ -1,0 +1,21 @@
+{
+  "home": {
+    "hello": "Hello",
+    "name": "I'am Krzysztof Juczyński",
+    "workspace": "Frontend Developer"
+  },
+  "mainNav": {
+    "home": "Home",
+    "aboutMe": "Aboute me",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "routes": {
+    "aboutMe": "about-me",
+    "skills": "skills",
+    "contact": "contact"
+  },
+  "skills": {
+    "title": "Programming languages and technologies I use:"
+  }
+}

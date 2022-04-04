@@ -1,0 +1,60 @@
+.home {
+  display: flex;
+  justify-content: center;
+
+  .information {
+    text-align: left;
+    margin-top: 50px;
+    margin-right: 50px;
+    position: relative;
+    overflow: hidden;
+
+    .hello {
+      font-size: 115px;
+      position: relative;
+      animation-name: leftToRightAnimation;
+      animation-duration: 1s;
+    }
+
+    .name{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 60px;
+      position: relative;
+      animation-name: leftToRightAnimation;
+      animation-duration: 3s;
+    }
+    .workspace {
+      font-size: 30px;
+      position: relative;
+      animation-name: leftToRightAnimation;
+      animation-duration: 5s;
+    }
+  }
+
+  .selfiePhoto {
+    border-radius: 50px;
+    margin-bottom: 25px;
+    max-width: 500px;
+    animation-name: opacity;
+    animation-duration: 3s;
+  }
+}
+
+@keyframes leftToRightAnimation {
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

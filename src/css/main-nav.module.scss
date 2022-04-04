@@ -1,0 +1,36 @@
+.mainNav {
+  margin: 25px 0;
+
+  .navList{
+    display: flex;
+    justify-content: center;
+
+    .item{
+      margin-left: 20px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      .link {
+        font-size: 25px;
+
+      }
+
+      .link.active {
+        font-weight: bold;
+
+
+      }
+    }
+  }
+}
+
+@keyframes lineMoveActive {
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 0;
+  }
+}

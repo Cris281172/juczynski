@@ -1,0 +1,41 @@
+.languageWrapper {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+
+  .languageButton {
+    border: none;
+    padding: 0;
+    background: transparent;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    height: 28px;
+    width: 50px;
+    &:before{
+      content: '';
+      background-color: rgba(0, 0, 0, 0.64);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+
+
+    
+    &:last-child{
+      margin-right: 0;
+    }
+
+    .icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .languageButton.active{
+    &:before{
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}
+

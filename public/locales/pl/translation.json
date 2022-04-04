@@ -1,0 +1,21 @@
+{
+    "home": {
+        "hello": "Witaj",
+        "name": "Jestem Krzysztof Juczyński",
+        "workspace": "Frontend Developer"
+    },
+    "mainNav": {
+        "home": "Strona główna",
+        "aboutMe": "O mnie",
+        "skills": "Umiejętności",
+        "contact": "Kontakt"
+    },
+    "routes": {
+        "aboutMe": "o-mnie",
+        "skills": "umiejetnosci",
+        "contact": "kontakt"
+    },
+    "skills": {
+        "title": "Języki programowania i technologie których używam:"
+    }
+}
