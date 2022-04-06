@@ -1,7 +1,7 @@
 import style from '../css/main-nav.module.scss'
 import { Link } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 const MainNav = () => {
 
     const { t, i18n } = useTranslation();
@@ -9,6 +9,7 @@ const MainNav = () => {
 
     return(
         <nav className={style.mainNav}>
+            <GiHamburgerMenu  className={style.hamburgerMenu} />
             <ul className={style.navList}>
                 <li className={style.item}>
                     <Link className={`${style.link} ${style.active}`}  to="/">{t('mainNav.home')}</Link>

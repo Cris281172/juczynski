@@ -1,6 +1,12 @@
 .mainNav {
   margin: 25px 0;
 
+  .hamburgerMenu {
+    display: none;
+    font-size: 50px;
+    cursor: pointer;
+  }
+
   .navList{
     display: flex;
     justify-content: center;
@@ -21,6 +27,38 @@
         font-weight: bold;
 
 
+      }
+    }
+  }
+}
+
+@media(max-width: 750px){
+  .mainNav {
+
+    .hamburgerMenu {
+      display: block;
+    }
+
+    .navList{
+      display: none;
+
+      .item{
+        margin-left: 20px;
+
+        &:first-child{
+          margin-left: 0;
+        }
+
+        .link {
+          font-size: 25px;
+
+        }
+
+        .link.active {
+          font-weight: bold;
+
+
+        }
       }
     }
   }
