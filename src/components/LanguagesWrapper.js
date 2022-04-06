@@ -3,6 +3,7 @@ import usaFlag from '../images/usa-flag-icon.png'
 import { useTranslation } from "react-i18next";
 import style from '../css/language-wrapper.module.scss';
 import {useLocation, useNavigate} from 'react-router-dom'
+import {useEffect} from 'react';
 
 const LanguagesWrapper = () => {
     const { t, i18n } = useTranslation();
@@ -33,6 +34,10 @@ const LanguagesWrapper = () => {
                 break;
         }
     };
+
+    useEffect(() => {
+        localStorage.setItem('i18nextLng', 'pl');
+    }, [])
 
     return(
         <div className={style.languageWrapper}>

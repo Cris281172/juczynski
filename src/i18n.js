@@ -3,8 +3,10 @@ import Backend from 'i18next-http-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
+//window.navigator.language
+
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
-    fallbackLng: localStorage.getItem('i18nextLng'),
+    fallbackLng: localStorage.getItem('i18nextLng') ? localStorage.getItem('i18nextLng') : 'pl',
     debug: true,
     preload: ['pl', 'en'],
     detection: {
