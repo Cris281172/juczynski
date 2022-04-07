@@ -6,7 +6,7 @@
   },
   "mainNav": {
     "home": "Home",
-    "aboutMe": "Aboute me",
+    "aboutMe": "About me",
     "skills": "Skills",
     "contact": "Contact"
   },
@@ -17,5 +17,13 @@
   },
   "skills": {
     "title": "Programming languages and technologies I use:"
+  },
+  "metaTags": {
+    "titles": {
+      "aboutMe": "About me",
+      "skills": "Skills",
+      "contact": "Contact",
+      "loading": "Loading"
+    }
   }
 }

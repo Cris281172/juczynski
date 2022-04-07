@@ -17,5 +17,13 @@
     },
     "skills": {
         "title": "Języki programowania i technologie których używam:"
+    },
+    "metaTags": {
+        "titles": {
+            "aboutMe": "O mnie",
+            "skills": "Umiejętności",
+            "contact": "Kontakt",
+            "loading": "Ładowanie"
+        }
     }
 }

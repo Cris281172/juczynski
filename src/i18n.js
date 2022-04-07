@@ -12,6 +12,9 @@ let localStorageLanguage = '';
 if(indexOfLanguage !== -1){
     localStorageLanguage = languages[indexOfLanguage];
 }
+else{
+    localStorageLanguage = 'pl';
+}
 
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
     fallbackLng: localStorage.getItem('i18nextLng') ? localStorage.getItem('i18nextLng') : localStorageLanguage,
