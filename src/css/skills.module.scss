@@ -50,6 +50,17 @@
   }
 }
 
+@media(max-width: 400px){
+  .skills{
+    .title {
+      font-size: 35px;
+    }
+    .skillsList {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
 @keyframes opacity {
   0%{
     opacity: 0;
