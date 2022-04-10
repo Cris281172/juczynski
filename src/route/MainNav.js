@@ -12,6 +12,8 @@ const MainNav = () => {
 
     const listDisplay = () => {
         console.log();
+        list.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
         list.current.classList.toggle(`${style.active}`);
     }
 
