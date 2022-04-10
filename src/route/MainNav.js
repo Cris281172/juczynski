@@ -17,21 +17,26 @@ const MainNav = () => {
 
     }
 
+    const scrollToTop = () => {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
     return(
         <nav className={style.mainNav}>
             <GiHamburgerMenu  className={style.hamburgerMenu} onClick={() => listDisplay()} />
             <ul className={style.navList} ref={list}>
                 <li className={style.item}>
-                    <Link className={`${style.link} ${style.active}`}  to="/">{t('mainNav.home')}</Link>
+                    <Link className={`${style.link} ${style.active}`} onClick={() => scrollToTop()}  to="/">{t('mainNav.home')}</Link>
                 </li>
                 <li className={style.item}>
-                    <Link className={style.link}  to={`/${t('routes.aboutMe')}`}>{t('mainNav.aboutMe')}</Link>
+                    <Link className={style.link} onClick={() => scrollToTop()}  to={`/${t('routes.aboutMe')}`}>{t('mainNav.aboutMe')}</Link>
                 </li>
                 <li className={style.item}>
-                    <Link className={style.link} to={`/${t('routes.skills')}`}>{t('mainNav.skills')}</Link>
+                    <Link className={style.link} onClick={() => scrollToTop()} to={`/${t('routes.skills')}`}>{t('mainNav.skills')}</Link>
                 </li>
                 <li className={style.item}>
-                    <Link className={style.link}  to={`/${t('routes.contact')}`}>{t('mainNav.contact')}</Link>
+                    <Link className={style.link} onClick={() => scrollToTop()}  to={`/${t('routes.contact')}`}>{t('mainNav.contact')}</Link>
                 </li>
 
             </ul>

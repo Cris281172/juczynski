@@ -10,7 +10,9 @@
   .navList{
     display: flex;
     justify-content: center;
-
+    position: relative;
+    right: 0;
+    animation: test 0.5s;
 
 
     .item{
@@ -37,6 +39,9 @@
 .navList.active {
   display: flex !important;
   flex-direction: column !important;
+  position: relative;
+  right: 0;
+  animation: mobileMenuAnimation 0.5s;
 }
 
 @media(max-width: 750px){
@@ -50,9 +55,7 @@
 
     .navList{
       display: none;
-      position: relative;
-      right: 0;
-      animation: mobileMenuAnimation 0.5s;
+
 
       .item{
 
@@ -93,5 +96,14 @@
   }
   100%{
     right: 0;
+  }
+}
+
+@keyframes test {
+  0%{
+    right: 0;
+  }
+  100%{
+    right: -100%;
   }
 }
