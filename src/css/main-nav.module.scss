@@ -12,7 +12,11 @@
     justify-content: center;
     position: relative;
     right: 0;
-    animation: test 0.5s;
+    -webkit-animation: mobileMenuAnimation 0.5s;
+    -moz-animation: mobileMenuAnimation 0.5s;
+    -ms-animation: mobileMenuAnimation 0.5s;
+    -o-animation: mobileMenuAnimation 0.5s;
+    animation: mobileMenuAnimation 0.5s;
 
 
     .item{
@@ -41,6 +45,10 @@
   flex-direction: column !important;
   position: relative;
   right: 0;
+  -webkit-animation: mobileMenuAnimation 0.5s;
+  -moz-animation: mobileMenuAnimation 0.5s;
+  -ms-animation: mobileMenuAnimation 0.5s;
+  -o-animation: mobileMenuAnimation 0.5s;
   animation: mobileMenuAnimation 0.5s;
 }
 
@@ -90,7 +98,10 @@
   }
 }
 
-@keyframes mobileMenuAnimation {
+
+
+
+@-webkit-keyframes mobileMenuAnimation {
   0%{
     right: -100%;
   }
@@ -99,11 +110,38 @@
   }
 }
 
-@keyframes test {
+@-moz-keyframes mobileMenuAnimation {
   0%{
-    right: 0;
+    right: -100%;
   }
   100%{
+    right: 0;
+  }
+}
+
+@-ms-keyframes mobileMenuAnimation {
+  0%{
     right: -100%;
+  }
+  100%{
+    right: 0;
+  }
+}
+
+@-o-keyframes mobileMenuAnimation {
+  0%{
+    right: -100%;
+  }
+  100%{
+    right: 0;
+  }
+}
+
+@keyframes mobileMenuAnimation{
+  0%{
+    right: -100%;
+  }
+  100%{
+    right: 0;
   }
 }
