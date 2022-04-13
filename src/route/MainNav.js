@@ -1,5 +1,5 @@
 import style from '../css/main-nav.module.scss'
-import { Link } from 'react-router-dom';
+import { NavLink  } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {useRef} from 'react';
@@ -27,16 +27,16 @@ const MainNav = () => {
             <GiHamburgerMenu  className={style.hamburgerMenu} onClick={() => listDisplay()} />
             <ul className={style.navList} ref={list}>
                 <li className={style.item}>
-                    <Link data-item="/" className={`${style.link} ${style.active}`} onClick={scrollToTop}  to="/">{t('mainNav.home')}</Link>
+                    <NavLink className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to="/">{t('mainNav.home')}</NavLink >
                 </li>
                 <li className={style.item}>
-                    <Link className={style.link} onClick={scrollToTop}  to={`/${t('routes.aboutMe')}`}>{t('mainNav.aboutMe')}</Link>
+                    <NavLink  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to={`/${t('routes.aboutMe')}`}>{t('mainNav.aboutMe')}</NavLink >
                 </li>
                 <li className={style.item}>
-                    <Link className={style.link} onClick={scrollToTop} to={`/${t('routes.skills')}`}>{t('mainNav.skills')}</Link>
+                    <NavLink  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop} to={`/${t('routes.skills')}`}>{t('mainNav.skills')}</NavLink >
                 </li>
                 <li className={style.item}>
-                    <Link className={style.link} onClick={scrollToTop}  to={`/${t('routes.contact')}`}>{t('mainNav.contact')}</Link>
+                    <NavLink  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to={`/${t('routes.contact')}`}>{t('mainNav.contact')}</NavLink >
                 </li>
 
             </ul>

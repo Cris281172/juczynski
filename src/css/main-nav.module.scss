@@ -36,9 +36,7 @@
   }
 }
 
-.navList.active {
 
-}
 
 @media(max-width: 750px){
   .mainNav {
@@ -72,13 +70,11 @@
         .link {
           font-size: 25px;
 
+          &.active {
+            font-weight: bold;
+          }
         }
 
-        .link.active {
-          font-weight: bold;
-
-
-        }
       }
     }
   }
