@@ -11,7 +11,6 @@ const MainNav = () => {
     const list = useRef();
 
     const listDisplay = () => {
-        console.log();
         list.current.classList.toggle(`${style.active}`);
         list.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
         list.current.options({behavior: "smooth", block: "end", inline: "nearest"});
@@ -21,6 +20,7 @@ const MainNav = () => {
     const scrollToTop = () => {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        console.log(window.location.pathname);
     }
 
     return(
@@ -28,7 +28,7 @@ const MainNav = () => {
             <GiHamburgerMenu  className={style.hamburgerMenu} onClick={() => listDisplay()} />
             <ul className={style.navList} ref={list}>
                 <li className={style.item}>
-                    <Link className={`${style.link} ${style.active}`} onClick={() => scrollToTop()}  to="/">{t('mainNav.home')}</Link>
+                    <Link data-item="/" className={`${style.link} ${style.active}`} onClick={() => scrollToTop()}  to="/">{t('mainNav.home')}</Link>
                 </li>
                 <li className={style.item}>
                     <Link className={style.link} onClick={() => scrollToTop()}  to={`/${t('routes.aboutMe')}`}>{t('mainNav.aboutMe')}</Link>

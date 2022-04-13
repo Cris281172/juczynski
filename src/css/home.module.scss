@@ -44,6 +44,7 @@
 @media(max-width: 1000px) {
   .home {
     flex-direction: column;
+    justify-content: flex-start;
 
     .information {
       margin-bottom: 50px;
@@ -75,7 +76,7 @@
     .selfiePhoto {
       border-radius: 50px;
       margin-bottom: 25px;
-      max-width: 500px;
+      max-width: 300px;
       animation-name: opacity;
       animation-duration: 3s;
       height: auto;
