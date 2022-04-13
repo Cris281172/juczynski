@@ -1,5 +1,5 @@
 .mainNav {
-  margin: 25px 0;
+  margin: 75px 0;
 
   .hamburgerMenu {
     display: none;
@@ -12,11 +12,7 @@
     justify-content: center;
     position: relative;
     right: 0;
-    -webkit-animation: mobileMenuAnimation 0.5s;
-    -moz-animation: mobileMenuAnimation 0.5s;
-    -ms-animation: mobileMenuAnimation 0.5s;
-    -o-animation: mobileMenuAnimation 0.5s;
-    animation: mobileMenuAnimation 0.5s;
+
 
 
     .item{
@@ -41,29 +37,28 @@
 }
 
 .navList.active {
-  display: flex !important;
-  flex-direction: column !important;
-  position: relative;
-  right: 0;
-  -webkit-animation: mobileMenuAnimation 0.5s;
-  -moz-animation: mobileMenuAnimation 0.5s;
-  -ms-animation: mobileMenuAnimation 0.5s;
-  -o-animation: mobileMenuAnimation 0.5s;
-  animation: mobileMenuAnimation 0.5s;
+
 }
 
 @media(max-width: 750px){
   .mainNav {
     position: relative;
-    overflow: hidden;
 
     .hamburgerMenu {
       display: block;
     }
 
     .navList{
-      display: none;
-
+      display: flex !important;
+      flex-direction: column !important;
+      position: absolute;
+      bottom: -100%;
+      right: -100%;
+      transition: 0.5s;
+      &.active{
+        transform: translateX(50%);
+        right: 50%;
+      }
 
       .item{
 
