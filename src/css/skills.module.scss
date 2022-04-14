@@ -1,14 +1,14 @@
 .skills {
   margin-bottom: 50px;
-
+  margin-top: 50px;
   .title {
-    font-size: 55px;
+    font-size: 45px;
     font-weight: bold;
   }
   .skillsList {
     margin-top: 40px;
     display: grid;
-    gap: 35px;
+    gap: 40px;
     grid-template-columns: repeat(5, 1fr);
 
     .item {
@@ -19,8 +19,9 @@
         animation: opacity 1.2s;
       }
       .title{
-        font-size: 20px;
-        margin-top: 10px;
+        font-size: 25px;
+        font-weight: normal;
+        margin-top: 15px;
       }
 
 
@@ -56,11 +57,11 @@
 //}
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .skills{
     margin-top: 35px;
     .title {
-      font-size: 45px;
+      font-size: 40px;
     }
     .skillsList {
       grid-template-columns: repeat(3, 1fr);
