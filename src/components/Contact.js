@@ -13,7 +13,7 @@ const Contact = () => {
                 <meta name="description" content="Lorem ipsum dolor sit amet" />
             </Helmet>
             <div className={style.contact}>
-                <h3 className={style.title}>Kontakt</h3>
+                <h3 className={style.title}>{t("contact.title")}</h3>
                 <div className={style.socialContainer}>
                     <a className={style.socialLink} href="https://github.com/Cris281172" target="_blank">
                         <h4 className={style.socialTitle}>Gitub</h4>

@@ -15,8 +15,15 @@
     "skills": "skills",
     "contact": "contact"
   },
+  "aboutMe": {
+    "title": "About me",
+    "description": "In December 2020 I started my adventure with the frontend. After about 7 months of hard training I found my first job (which I am still in) as Junior Frontend Devloper. Currently I am further developing my programming skills and also entering the world of the backend."
+  },
   "skills": {
     "title": "Programming languages and technologies I use:"
+  },
+  "contact": {
+    "title": "Contact"
   },
   "metaTags": {
     "titles": {
