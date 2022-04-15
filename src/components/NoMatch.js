@@ -1,14 +1,15 @@
 import style from '../css/no-match.module.scss';
-
+import {Link} from 'react-router-dom'
+import {useTranslation} from "react-i18next";
 
 const NoMatch = () => {
+    const { t, i18n } = useTranslation();
+
     return(
-        <section>
-            <div className={style.content}>
-                <h2>No Matches</h2>
-                <h2>No Matches</h2>
-            </div>
-        </section>
+        <div className={style.noMatch}>
+            <h4 className={style.title}>{t("noMatch.title")}</h4>
+            <p className={style.subtitle}>{t("noMatch.backInformation")}: <Link class={style.homeLink} to="/">{t("noMatch.button")}</Link></p>
+        </div>
     )
 }
 

@@ -25,5 +25,10 @@
       "contact": "Contact",
       "loading": "Loading"
     }
+  },
+  "noMatch": {
+    "title": "No Matches",
+    "backInformation": "Back to",
+    "button": "Home"
   }
 }

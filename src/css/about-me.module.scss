@@ -8,11 +8,22 @@
   }
   .text{
     font-size: 25px;
+    animation: opacity 1.2s;
   }
 }
 
 @media (max-width: 500px) {
   .aboutMe{
     margin-top: 35px;
+  }
+}
+
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }

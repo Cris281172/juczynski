@@ -25,5 +25,10 @@
             "contact": "Kontakt",
             "loading": "Ładowanie"
         }
+    },
+    "noMatch": {
+        "title": "Brak znalezionych wyszukiwań",
+        "backInformation": "Wróć do",
+        "button": "Strony głównej"
     }
 }
