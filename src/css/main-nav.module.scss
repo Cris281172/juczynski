@@ -103,6 +103,12 @@
   }
 }
 
+@media(max-width: 450px){
+  .mainNav {
+    margin: 100px 0;
+  }
+}
+
 @keyframes lineMoveActive {
   0%{
     left: -100%;
