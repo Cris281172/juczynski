@@ -12,7 +12,7 @@ const MainNav = () => {
     const mainNav = useRef();
 
     const listDisplay = () => {
-        if(mainNav.current.classList.value === 'main-nav_mainNav__IjQBr main-nav_active__chPTP'){
+        if(mainNav.current.classList.value.split(' ')[1]){
             setTimeout(() => {
                 mainNav.current.classList.toggle(`${style.active}`);
             }, 200)
