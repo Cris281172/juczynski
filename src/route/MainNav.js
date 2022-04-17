@@ -12,8 +12,16 @@ const MainNav = () => {
     const mainNav = useRef();
 
     const listDisplay = () => {
-        list.current.classList.toggle(`${style.active}`);
-        mainNav.current.classList.toggle(`${style.active}`);
+        if(mainNav.current.classList.value === 'main-nav_mainNav__IjQBr main-nav_active__chPTP'){
+            setTimeout(() => {
+                mainNav.current.classList.toggle(`${style.active}`);
+            }, 200)
+            list.current.classList.toggle(`${style.active}`);
+        }
+        else{
+            list.current.classList.toggle(`${style.active}`);
+            mainNav.current.classList.toggle(`${style.active}`);
+        }
       //  list.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
        // list.current.options({behavior: "smooth", block: "end", inline: "nearest"});
 
