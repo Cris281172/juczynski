@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Cris281172/static/css/main.2a30e30e.css",
-    "main.js": "/Cris281172/static/js/main.dc94b6c0.js",
-    "static/js/787.202b8111.chunk.js": "/Cris281172/static/js/787.202b8111.chunk.js",
-    "static/media/rozarios-project.png": "/Cris281172/static/media/rozarios-project.7b64634601eef6fe2b5e.png",
-    "static/media/background-porfolio.jpg": "/Cris281172/static/media/background-porfolio.90fb56cb01b6bff06cae.jpg",
-    "static/media/image-search-project.png": "/Cris281172/static/media/image-search-project.e15a4131b903a38381c0.png",
-    "static/media/selfie-photo.jpg": "/Cris281172/static/media/selfie-photo.df9af197578486b351c2.jpg",
-    "static/media/shortcut-icon.png": "/Cris281172/static/media/shortcut-icon.abbdbad9687175a08c6d.png",
-    "static/media/logo.svg": "/Cris281172/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Cris281172/index.html",
-    "static/media/getFetch.cjs": "/Cris281172/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.2a30e30e.css.map": "/Cris281172/static/css/main.2a30e30e.css.map",
-    "main.dc94b6c0.js.map": "/Cris281172/static/js/main.dc94b6c0.js.map",
-    "787.202b8111.chunk.js.map": "/Cris281172/static/js/787.202b8111.chunk.js.map"
+    "main.css": "/Cris281172/juczynski.git/static/css/main.eddf93ce.css",
+    "main.js": "/Cris281172/juczynski.git/static/js/main.c73deb61.js",
+    "static/js/787.202b8111.chunk.js": "/Cris281172/juczynski.git/static/js/787.202b8111.chunk.js",
+    "static/media/rozarios-project.png": "/Cris281172/juczynski.git/static/media/rozarios-project.7b64634601eef6fe2b5e.png",
+    "static/media/background-porfolio.jpg": "/Cris281172/juczynski.git/static/media/background-porfolio.90fb56cb01b6bff06cae.jpg",
+    "static/media/image-search-project.png": "/Cris281172/juczynski.git/static/media/image-search-project.e15a4131b903a38381c0.png",
+    "static/media/selfie-photo.jpg": "/Cris281172/juczynski.git/static/media/selfie-photo.df9af197578486b351c2.jpg",
+    "static/media/shortcut-icon.png": "/Cris281172/juczynski.git/static/media/shortcut-icon.abbdbad9687175a08c6d.png",
+    "static/media/logo.svg": "/Cris281172/juczynski.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Cris281172/juczynski.git/index.html",
+    "static/media/getFetch.cjs": "/Cris281172/juczynski.git/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.eddf93ce.css.map": "/Cris281172/juczynski.git/static/css/main.eddf93ce.css.map",
+    "main.c73deb61.js.map": "/Cris281172/juczynski.git/static/js/main.c73deb61.js.map",
+    "787.202b8111.chunk.js.map": "/Cris281172/juczynski.git/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a30e30e.css",
-    "static/js/main.dc94b6c0.js"
+    "static/css/main.eddf93ce.css",
+    "static/js/main.c73deb61.js"
   ]
 }
