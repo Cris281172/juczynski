@@ -1,0 +1,44 @@
+{
+  "home": {
+    "hello": "Hello",
+    "name": "I'am Krzysztof Juczyński",
+    "workspace": "Frontend Developer"
+  },
+  "mainNav": {
+    "home": "Home",
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "contact": "Contact",
+    "projects": "Projects"
+  },
+  "routes": {
+    "aboutMe": "about-me",
+    "skills": "skills",
+    "contact": "contact",
+    "projects": "projects"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "description": "In December 2020 I started my adventure with the frontend. After about 7 months of hard training I found my first job (which I am still in) as Junior Frontend Devloper. Currently I am further developing my programming skills and also entering the world of the backend."
+  },
+  "skills": {
+    "title": "Programming languages and technologies I use:"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "metaTags": {
+    "titles": {
+      "aboutMe": "About me",
+      "skills": "Skills",
+      "contact": "Contact",
+      "projects": "Projects",
+      "loading": "Loading"
+    }
+  },
+  "noMatch": {
+    "title": "No Matches",
+    "backInformation": "Back to",
+    "button": "Home"
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "home": {
+        "hello": "Witaj",
+        "name": "Jestem Krzysztof Juczyński",
+        "workspace": "Frontend Developer"
+    },
+    "mainNav": {
+        "home": "Strona główna",
+        "aboutMe": "O mnie",
+        "skills": "Umiejętności",
+        "contact": "Kontakt",
+        "projects": "Projekty"
+    },
+    "routes": {
+        "aboutMe": "o-mnie",
+        "skills": "umiejetnosci",
+        "contact": "kontakt",
+        "projects": "projekty"
+    },
+    "aboutMe": {
+        "title": "O mnie",
+        "description": "W grudniu roku 2020 zacząłem swoja przygodę z frontend'em. Po około 7 miesiącach ciężkiej nauki, znalazłem swoją pierwszą pracę (w której jestem do dziś), jako junior Frontend Devloper. Aktualnie dalej rozwijam swoje umięjętności w programowaniu i dodatkowo wchodzę w świat backend'u."
+    },
+    "skills": {
+        "title": "Języki programowania i technologie których używam:"
+    },
+    "contact": {
+        "title": "Kontakt"
+    },
+    "metaTags": {
+        "titles": {
+            "aboutMe": "O mnie",
+            "skills": "Umiejętności",
+            "contact": "Kontakt",
+            "projects": "Projekty",
+            "loading": "Ładowanie"
+        }
+    },
+    "noMatch": {
+        "title": "Brak znalezionych wyszukiwań",
+        "backInformation": "Wróć do",
+        "button": "Strony głównej"
+    }
+}
