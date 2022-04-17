@@ -9,9 +9,11 @@ const MainNav = () => {
     const { t, i18n } = useTranslation();
 
     const list = useRef();
+    const mainNav = useRef();
 
     const listDisplay = () => {
         list.current.classList.toggle(`${style.active}`);
+        mainNav.current.classList.toggle(`${style.active}`);
       //  list.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
        // list.current.options({behavior: "smooth", block: "end", inline: "nearest"});
 
@@ -23,7 +25,7 @@ const MainNav = () => {
     }
 
     return(
-        <nav className={style.mainNav}>
+        <nav className={style.mainNav} ref={mainNav}>
             <GiHamburgerMenu  className={style.hamburgerMenu} onClick={() => listDisplay()} />
             <ul className={style.navList} ref={list}>
                 <li className={style.item}>
