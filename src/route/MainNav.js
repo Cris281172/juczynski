@@ -38,7 +38,9 @@ const MainNav = () => {
                 <li className={style.item}>
                     <NavLink  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to={`/${t('routes.contact')}`}>{t('mainNav.contact')}</NavLink >
                 </li>
-
+                <li className={style.item}>
+                    <NavLink  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to={`/${t('routes.projects')}`}>{t('mainNav.projects')}</NavLink >
+                </li>
             </ul>
         </nav>
     )

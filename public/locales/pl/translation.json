@@ -8,12 +8,14 @@
         "home": "Strona główna",
         "aboutMe": "O mnie",
         "skills": "Umiejętności",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "projects": "Projekty"
     },
     "routes": {
         "aboutMe": "o-mnie",
         "skills": "umiejetnosci",
-        "contact": "kontakt"
+        "contact": "kontakt",
+        "projects": "projekty"
     },
     "aboutMe": {
         "title": "O mnie",

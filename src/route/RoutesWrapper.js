@@ -6,6 +6,7 @@ import Contact from '../components/Contact'
 import { Routes, Route } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 import NoMatch from '../components/NoMatch'
+import Projects from "../components/Projects";
 
 
 const RoutesWrapper = () => {
@@ -19,6 +20,7 @@ const RoutesWrapper = () => {
                 <Route path={t("routes.aboutMe")} element={< AboutMe />} />
                 <Route path={t("routes.skills")} element={< Skills />} />
                 <Route path={t("routes.contact")} element={< Contact />} />
+                <Route path={t("routes.projects")} element={<Projects />} />
             </Route>
             <Route path="*" element={<NoMatch />} />
         </Routes>

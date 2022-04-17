@@ -8,12 +8,14 @@
     "home": "Home",
     "aboutMe": "About me",
     "skills": "Skills",
-    "contact": "Contact"
+    "contact": "Contact",
+    "projects": "Projects"
   },
   "routes": {
     "aboutMe": "about-me",
     "skills": "skills",
-    "contact": "contact"
+    "contact": "contact",
+    "projects": "projects"
   },
   "aboutMe": {
     "title": "About me",
