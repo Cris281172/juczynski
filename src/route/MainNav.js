@@ -37,7 +37,7 @@ const MainNav = () => {
             <GiHamburgerMenu  className={style.hamburgerMenu} onClick={() => listDisplay()} />
             <ul className={style.navList} ref={list}>
                 <li className={style.item}>
-                    <NavLink className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to="/">{t('mainNav.home')}</NavLink >
+                    <NavLink className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to="/">{t('mainNav.home')}dd</NavLink >
                 </li>
                 <li className={style.item}>
                     <NavLink  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to={`/${t('routes.aboutMe')}`}>{t('mainNav.aboutMe')}</NavLink >
