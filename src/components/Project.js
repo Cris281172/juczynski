@@ -30,13 +30,6 @@ const Project = () => {
                     </div>
                 )
             })}
-            {/*<div className={style.project}>*/}
-            {/*    <img className={style.image} src={imageSrc} />*/}
-            {/*    <h4 className={style.title}>{title}</h4>*/}
-            {/*    <a href={liveSrc}></a>*/}
-            {/*    <a href={codeSrc}></a>*/}
-            {/*    <button className={style.button} onClick={seeMoreProjects}>Zobacz więcej</button>*/}
-            {/*</div>*/}
             {seeMore &&
             <ProjectMore
                 setSeeMore={setSeeMore}

@@ -2,6 +2,7 @@ import style from '../css/project-more.module.scss'
 import { AiFillCloseCircle } from "react-icons/ai";
 
 const ProjectMore = ({setSeeMore, currentProject}) => {
+    document.body.style.overflow = "hidden";
     return(
         <div className={style.projectMore} onClick={() => console.log('testttt')}>
             <div className={style.moreSection}>
