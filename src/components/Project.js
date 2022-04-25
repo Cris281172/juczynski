@@ -6,14 +6,16 @@ import {projectsList} from "../redux/features/projectsSlice";
 
 const Project = () => {
     const projects = useSelector(projectsList);
-
+    const[scrollActive, setScrollActive] = useState('visible')
     const[seeMore, setSeeMore] = useState(false);
     const[currentProject, setCurrentProject] = useState({});
     const seeMoreProjects = (project) => {
         setCurrentProject(project)
         setSeeMore(true);
-
+        setScrollActive('hidden');
     }
+    document.body.style.overflow = scrollActive;
+
 
     console.log(currentProject)
 
@@ -34,6 +36,7 @@ const Project = () => {
             <ProjectMore
                 setSeeMore={setSeeMore}
                 currentProject={currentProject}
+                setScrollActive={setScrollActive}
             />}
         </>
     )

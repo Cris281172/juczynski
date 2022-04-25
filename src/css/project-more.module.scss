@@ -29,18 +29,19 @@
       .button{
         background-color: transparent;
         border: 2px solid #fff;
-        font-size: 20px;
-        margin-right: 25px;
+        font-size: 22px;
         cursor: pointer;
-        padding: 7px 15px;
+        padding: 10px 20px;
         transition: 0.5s;
-
+        margin-right: 25px;
+        transform: scale(1);
         &:nth-last-child(1){
           margin-right: 0;
         }
 
         &:hover {
-          border-radius: 20px;
+          border-radius: 5px;
+          transform: scale(1.15);
         }
       }
     }
@@ -52,6 +53,6 @@
     right: 15px;
     border: none;
     font-size: 50px;
-
+    cursor: pointer;
   }
 }

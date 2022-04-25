@@ -1,8 +1,7 @@
 import style from '../css/project-more.module.scss'
 import { AiFillCloseCircle } from "react-icons/ai";
 
-const ProjectMore = ({setSeeMore, currentProject}) => {
-    document.body.style.overflow = "hidden";
+const ProjectMore = ({setSeeMore, currentProject, setScrollActive}) => {
     return(
         <div className={style.projectMore} onClick={() => console.log('testttt')}>
             <div className={style.moreSection}>
@@ -14,7 +13,10 @@ const ProjectMore = ({setSeeMore, currentProject}) => {
                     <a href={currentProject.code} target="_blank" className={style.button}>Code</a>
                 </div>
             </div>
-            <AiFillCloseCircle onClick={() => setSeeMore(false)} className={style.closeProjectMore} />
+            <AiFillCloseCircle onClick={() => {
+                setSeeMore(false)
+                setScrollActive('visible');
+            }} className={style.closeProjectMore} />
         </div>
     )
 }
