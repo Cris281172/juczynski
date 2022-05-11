@@ -22,3 +22,10 @@
     padding-right: 20px;
   }
 }
+
+@media(max-width: 350px) {
+  .home {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
