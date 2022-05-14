@@ -25,6 +25,10 @@ const LanguagesWrapper = () => {
         const enRoutes = t('routes', {lng: "en"});
         const plRoutes = t('routes', {lng: "pl"});
 
+        console.log(i18n.language);
+
+        localStorage.setItem('i18nextLng', language);
+
         switch(i18n.language){
             case 'en':
                 redirectToLang(plRoutes, enRoutes);
@@ -34,10 +38,7 @@ const LanguagesWrapper = () => {
                 break;
         }
     };
-
-    useEffect(() => {
-        localStorage.setItem('i18nextLng', 'pl');
-    }, [])
+    
 
     return(
         <div className={style.languageWrapper}>
