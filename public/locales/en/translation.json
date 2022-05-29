@@ -40,5 +40,8 @@
     "title": "No Matches",
     "backInformation": "Back to",
     "button": "Home"
+  },
+  "projects": {
+    "seeMore": "See More"
   }
 }

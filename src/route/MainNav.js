@@ -49,7 +49,7 @@ const MainNav = () => {
                     <NavLink  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to={`/${t('routes.contact')}`}>{t('mainNav.contact')}</NavLink >
                 </li>
                 <li className={style.item} >
-                    <NavLink style={{pointerEvents: 'none', color: 'rgba(137,137,137,0.68)'}}  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to={`/${t('routes.projects')}`}>{t('mainNav.projects')}</NavLink >
+                    <NavLink  className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to={`/${t('routes.projects')}`}>{t('mainNav.projects')}</NavLink >
                 </li>
             </ul>
         </nav>

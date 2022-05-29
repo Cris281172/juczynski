@@ -40,5 +40,8 @@
         "title": "Brak znalezionych wyszukiwań",
         "backInformation": "Wróć do",
         "button": "Strony głównej"
+    },
+    "projects": {
+        "seeMore": "Zobacz Więcej"
     }
 }
