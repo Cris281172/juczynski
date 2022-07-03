@@ -7,7 +7,7 @@ const ProjectMore = ({setSeeMore, currentProject, setScrollActive}) => {
             <div className={style.moreSection}>
                 <img className={style.image} src={currentProject.img} />
                 <h4 className={style.title}>{currentProject.title}</h4>
-                <p>{currentProject.description}</p>
+                <p className={style.text}>{currentProject.description}</p>
                 <div className={style.liveCodeButtons}>
                     <a href={currentProject.live} target="_blank" className={style.button}>Live</a>
                     <a href={currentProject.code} target="_blank" className={style.button}>Code</a>
