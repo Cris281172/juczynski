@@ -37,13 +37,32 @@
         border: 2.5px solid #4b4b4b;
         margin-right: 25px;
         transition: 0.4s;
+        position: relative;
+        overflow: hidden;
+        
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 0;
+          height: 100%;
+          background-color: #fff;
+          transition: 0.4s;
+
+        }
 
         &:nth-last-child(1){
           margin-right: 0;
         }
 
         &:hover {
-          transform: scale(1.05);
+          border: 2.5px solid #fff;
+
+          &:after{
+            width: 15%;
+          }
         }
       }
     }
