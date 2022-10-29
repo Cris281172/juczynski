@@ -16,24 +16,24 @@ export const slice = createSlice({
                 code: 'https://github.com/Cris281172/rozarios-page',
                 visible: false,
             },
-            {
-                id: 2,
-                title: 'Images Search',
-                description: 'Doloremque aperiam autem ut necessitatibus repellat error quod ut. Eum quia ab enim quia et. Ea tempora quae sed totam blanditiis voluptatibus qui. Nostrum in at libero. Ab sunt ad qui provident placeat nihil praesentium.',
-                img: imageSearchProject,
-                live: 'https://rozarios.herokuapp.com/',
-                code: 'https://github.com/Cris281172/rozarios-page',
-                visible: false,
-            },
-            {
-                id: 3,
-                title: 'Quiz Programilonerzy',
-                description: 'Doloremque aperiam autem ut necessitatibus repellat error quod ut. Eum quia ab enim quia et. Ea tempora quae sed totam blanditiis voluptatibus qui. Nostrum in at libero. Ab sunt ad qui provident placeat nihil praesentium.',
-                img: quizProject,
-                live: 'https://rozarios.herokuapp.com/',
-                code: 'https://github.com/Cris281172/rozarios-page',
-                visible: false,
-            }
+            // {
+            //     id: 2,
+            //     title: 'Images Search',
+            //     description: 'Doloremque aperiam autem ut necessitatibus repellat error quod ut. Eum quia ab enim quia et. Ea tempora quae sed totam blanditiis voluptatibus qui. Nostrum in at libero. Ab sunt ad qui provident placeat nihil praesentium.',
+            //     img: imageSearchProject,
+            //     live: 'https://rozarios.herokuapp.com/',
+            //     code: 'https://github.com/Cris281172/rozarios-page',
+            //     visible: false,
+            // },
+            // {
+            //     id: 3,
+            //     title: 'Quiz Programilonerzy',
+            //     description: 'Doloremque aperiam autem ut necessitatibus repellat error quod ut. Eum quia ab enim quia et. Ea tempora quae sed totam blanditiis voluptatibus qui. Nostrum in at libero. Ab sunt ad qui provident placeat nihil praesentium.',
+            //     img: quizProject,
+            //     live: 'https://rozarios.herokuapp.com/',
+            //     code: 'https://github.com/Cris281172/rozarios-page',
+            //     visible: false,
+            // }
         ],
     },
     reducers: {

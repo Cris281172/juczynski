@@ -1,4 +1,17 @@
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGithub, SiVuedotjs, SiNodedotjs, SiMongodb, SiExpress, SiPug } from "react-icons/si";
+import {
+    SiHtml5,
+    SiCss3,
+    SiJavascript,
+    SiReact,
+    SiGit,
+    SiGithub,
+    SiVuedotjs,
+    SiNodedotjs,
+    SiMongodb,
+    SiExpress,
+    SiPug,
+    SiTypescript, SiPostman, SiStorybook, SiCypress, SiSass
+} from "react-icons/si";
 import ReactTooltip from 'react-tooltip';
 import style from '../css/skills.module.scss'
 import {useTranslation} from "react-i18next";
@@ -26,6 +39,12 @@ const Skills = () => {
                         <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank">
                             <SiCss3 className={style.link} data-tip="CSS" />
                             <h4 className={style.title}>CSS</h4>
+                        </a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="https://sass-lang.com/" target="_blank">
+                            <SiSass className={style.link} data-tip="SASS" />
+                            <h4 className={style.title}>SASS</h4>
                         </a>
                     </li>
                     <li className={style.item}>
@@ -80,6 +99,30 @@ const Skills = () => {
                         <a href="" target="_blank">
                             <SiPug className={style.link} data-tip="Pug" />
                             <h4 className={style.title}>Pug</h4>
+                        </a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="https://www.typescriptlang.org/" target="_blank">
+                            <SiTypescript className={style.link} data-tip="Typescript" />
+                            <h4 className={style.title}>Typescript</h4>
+                        </a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="https://www.postman.com/" target="_blank">
+                            <SiPostman className={style.link} data-tip="Postman" />
+                            <h4 className={style.title}>Postman</h4>
+                        </a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="https://storybook.js.org/" target="_blank">
+                            <SiStorybook className={style.link} data-tip="Storybook" />
+                            <h4 className={style.title}>Storybook</h4>
+                        </a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="https://www.cypress.io/" target="_blank">
+                            <SiCypress className={style.link} data-tip="Cypress" />
+                            <h4 className={style.title}>Cypress</h4>
                         </a>
                     </li>
                 </ul>

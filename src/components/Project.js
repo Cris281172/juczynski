@@ -11,6 +11,7 @@ const Project = () => {
     const[scrollActive, setScrollActive] = useState('visible')
     const[seeMore, setSeeMore] = useState(false);
     const[currentProject, setCurrentProject] = useState({});
+
     const seeMoreProjects = (project) => {
         setCurrentProject(project)
         setSeeMore(true);
@@ -18,8 +19,6 @@ const Project = () => {
     }
     document.body.style.overflow = scrollActive;
 
-
-    console.log(currentProject)
 
 
 

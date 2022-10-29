@@ -1,10 +1,21 @@
 import style from '../css/project-more.module.scss'
 import { AiFillCloseCircle } from "react-icons/ai";
+import {useRef} from 'react';
+
 
 const ProjectMore = ({setSeeMore, currentProject, setScrollActive}) => {
+    const projectMore = useRef();
+    const moreSection = useRef();
+
+    window.addEventListener('click', e => {
+
+
+    })
+
+
     return(
-        <div className={style.projectMore} onClick={() => console.log('testttt')}>
-            <div className={style.moreSection}>
+        <div className={style.projectMore} ref={projectMore}>
+            <div className={style.moreSection} ref={moreSection}>
                 <img className={style.image} src={currentProject.img} />
                 <h4 className={style.title}>{currentProject.title}</h4>
                 <p>{currentProject.description}</p>
