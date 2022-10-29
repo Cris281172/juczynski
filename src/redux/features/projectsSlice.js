@@ -10,7 +10,7 @@ export const slice = createSlice({
             {
                 id: 1,
                 title: 'Rozarios Project',
-                description: 'Doloremque aperiam autem ut necessitatibus repellat error quod ut. Eum quia ab enim quia et. Ea tempora quae sed totam blanditiis voluptatibus qui. Nostrum in at libero. Ab sunt ad qui provident placeat nihil praesentium.',
+                description: 'Restauracja Rozario\'s mieści się przy Al. Ks. Kard. Stefana Wyszyńskiego 67. Powstała w 1999 roku i bardzo szybko zdobyła uznanie zarówno wśród mieszkańców Retkinia jak i gości z najdalszych zakątków Łodzi.',
                 img: rozariosProject,
                 live: 'https://rozarios.herokuapp.com/',
                 code: 'https://github.com/Cris281172/rozarios-page',

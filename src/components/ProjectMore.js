@@ -5,29 +5,33 @@ import {useRef} from 'react';
 
 const ProjectMore = ({setSeeMore, currentProject, setScrollActive}) => {
     const projectMore = useRef();
-    const moreSection = useRef();
 
-    window.addEventListener('click', e => {
+    const closeProjectMoreByWindow = (e) => {
+        if(e.target === projectMore.current){
+            closeProjectMore()
+        }
 
+    }
 
-    })
+    const closeProjectMore = () => {
+        setSeeMore(false)
+        setScrollActive('visible');
+    }
+
 
 
     return(
-        <div className={style.projectMore} ref={projectMore}>
-            <div className={style.moreSection} ref={moreSection}>
+        <div className={style.projectMore} onClick={closeProjectMoreByWindow} ref={projectMore}>
+            <div className={style.moreSection}>
                 <img className={style.image} src={currentProject.img} />
                 <h4 className={style.title}>{currentProject.title}</h4>
-                <p>{currentProject.description}</p>
+                <p className={style.text}>{currentProject.description}</p>
                 <div className={style.liveCodeButtons}>
                     <a href={currentProject.live} target="_blank" className={style.button}>Live</a>
                     <a href={currentProject.code} target="_blank" className={style.button}>Code</a>
                 </div>
             </div>
-            <AiFillCloseCircle onClick={() => {
-                setSeeMore(false)
-                setScrollActive('visible');
-            }} className={style.closeProjectMore} />
+            <AiFillCloseCircle onClick={closeProjectMore} className={style.closeProjectMore} />
         </div>
     )
 }
