@@ -2,7 +2,7 @@ import style from '../css/main-nav.module.scss'
 import { NavLink  } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
-import {useRef} from 'react';
+import {useRef, useState} from 'react';
 
 const MainNav = () => {
 
@@ -10,8 +10,11 @@ const MainNav = () => {
 
     const list = useRef();
     const mainNav = useRef();
+    const[mobileMenuActive, setMobileMenuActive] = useState(false);
 
-    const listDisplay = () => {
+    const listDisplay = (e) => {
+        e.currentTarget.classList.toggle(`${style.isActive}`);
+
         if(mainNav.current.classList.value.split(' ')[1]){
             setTimeout(() => {
                 mainNav.current.classList.toggle(`${style.active}`);
@@ -22,8 +25,8 @@ const MainNav = () => {
             list.current.classList.toggle(`${style.active}`);
             mainNav.current.classList.toggle(`${style.active}`);
         }
-      //  list.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-       // list.current.options({behavior: "smooth", block: "end", inline: "nearest"});
+        //  list.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+        // list.current.options({behavior: "smooth", block: "end", inline: "nearest"});
 
     }
 
@@ -34,7 +37,11 @@ const MainNav = () => {
 
     return(
         <nav className={style.mainNav} ref={mainNav}>
-            <GiHamburgerMenu  className={style.hamburgerMenu} onClick={() => listDisplay()} />
+            <button className={`${style.hamburger} ${style.active}`} onClick={listDisplay}>
+                <span className={style.line} />
+                <span className={style.line} />
+                <span className={style.line} />
+            </button>
             <ul className={style.navList} ref={list}>
                 <li className={style.item}>
                     <NavLink className={(navData) => navData.isActive ? `${style.link} ${style.active}` : style.link } onClick={scrollToTop}  to="/">{t('mainNav.home')}</NavLink >
