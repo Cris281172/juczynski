@@ -7,7 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 import NoMatch from '../components/NoMatch'
 import Projects from "../components/Projects";
-import CommercialExperience from '../components/CommercialExperience'
+import Experience from '../components/Experience'
 
 const RoutesWrapper = () => {
     const { t, i18n } = useTranslation();
@@ -19,7 +19,7 @@ const RoutesWrapper = () => {
                 <Route index element={<Home /> } />
                 <Route path={t("routes.aboutMe")} element={< AboutMe />} />
                 <Route path={t("routes.skills")} element={< Skills />} />
-                <Route path={t("routes.commercialExperience")} element={< CommercialExperience />} />
+                <Route path={t("routes.commercialExperience")} element={< Experience />} />
                 <Route path={t("routes.contact")} element={< Contact />} />
                 <Route path={t("routes.projects")} element={<Projects />} />
             </Route>

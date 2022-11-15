@@ -8,14 +8,14 @@
     "home": "Home",
     "aboutMe": "About me",
     "skills": "Skills",
-    "commercialExperience": "Commercial experience",
+    "commercialExperience": "Experience",
     "contact": "Contact",
     "projects": "Projects"
   },
   "routes": {
     "aboutMe": "about-me",
     "skills": "skills",
-    "commercialExperience": "commercial-experience",
+    "commercialExperience": "experience",
     "contact": "contact",
     "projects": "projects"
   },

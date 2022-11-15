@@ -8,14 +8,14 @@
         "home": "Strona główna",
         "aboutMe": "O mnie",
         "skills": "Umiejętności",
-        "commercialExperience": "Doświadczenie komerycjne",
+        "commercialExperience": "Doświadczenie",
         "contact": "Kontakt",
         "projects": "Projekty"
     },
     "routes": {
         "aboutMe": "o-mnie",
         "skills": "umiejetnosci",
-        "commercialExperience": "doswiadczenie-komerycjne",
+        "commercialExperience": "doswiadczenie",
         "contact": "kontakt",
         "projects": "projekty"
     },

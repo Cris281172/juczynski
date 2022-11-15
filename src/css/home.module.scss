@@ -4,7 +4,6 @@
   margin-top: 125px;
   .information {
     text-align: left;
-    margin-top: 50px;
     margin-right: 50px;
     position: relative;
     overflow: hidden;
@@ -45,6 +44,7 @@
   .home {
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 45px;
 
     .information {
       margin-bottom: 50px;

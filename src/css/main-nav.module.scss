@@ -63,12 +63,12 @@
 
 
 
-@media(max-width: 1200px){
+@media(max-width: 1000px){
   .mainNav {
     position: relative;
     transition: 0.2s;
     &.active{
-      margin: 100px 0;
+      margin: 100px 0 170px 0;
     }
     .hamburgerMenu {
       display: block;
