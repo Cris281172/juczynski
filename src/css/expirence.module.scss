@@ -1,33 +1,22 @@
 .experience{
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .firstTitle{
-    animation-name: animationOpacity;
-    animation-duration: 0.5s;
-    animation-delay: 0.2s;
+  margin-top: 50px;
+  transition: 0.3s;
+  .title{
+    margin-bottom: 30px;
+    font-size: 22px;
+    animation: opacity 1s;
   }
-  .line{
-    display: block;
-    width: 5px;
-    height: 15px;
-    margin-bottom: 5px;
-    background-color: white;
+}
+
+@keyframes opacity {
+  0%{
     opacity: 0;
   }
-  .line.visible{
+  100%{
     opacity: 1;
   }
 }
 
-
-
-@keyframes animationOpacity {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
